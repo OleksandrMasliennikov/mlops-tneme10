@@ -1,0 +1,10 @@
+model_list:
+  - model_name: chat
+    litellm_params:
+      model: ollama_chat/mistral:7b-instruct-q4_K_M
+      api_base: http://127.0.0.1:11434
+
+  - model_name: chat
+    litellm_params:
+       model: openrouter/openrouter/free
+       api_key: os.environ/"API_KEY"
